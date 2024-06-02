@@ -88,7 +88,7 @@ img {
 
     .navbar .navbar-nav {
         position: absolute;
-        top: 60px;
+        top: 67px;
         right: -100%;
         width: 30rem;
         height: calc(100vh - 50px);
@@ -147,7 +147,7 @@ img {
 
     .navbar .navbar-nav {
         position: absolute;
-        top: 45px;
+        top: 50px;
         right: -100%;
         width: 30rem;
         height: calc(100vh - 50px);
