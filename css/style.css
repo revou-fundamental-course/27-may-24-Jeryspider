@@ -203,7 +203,7 @@ body {
 input[type=text]{
     border: 1px solid #000;
     padding: 0.5rem 1rem;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     background-color: #3b4554;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
@@ -217,7 +217,7 @@ input[type=text]{
 input[type=date]{
     border: 1px solid #000;
     padding: 0.5rem 1rem;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     background-color: #3b4554;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
@@ -235,7 +235,7 @@ input[type=submit] {
     background-color: #222831;
     border: 1px solid #000;
     padding: 0.5rem 1rem;
-    width: 86%;
+    width: 100%;
     border-radius: 5px;
     color: #e4e3e3;
     box-shadow: 2px 2px 10px rgba(22, 22, 22, 0.5);
@@ -244,7 +244,7 @@ input[type=submit] {
 textarea {
     border: 1px solid #000;
     padding: 0.5rem 1rem;
-    width: 80%;
+    width: 100%;
     border-radius: 5px;
     background-color: #3b4554;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2) inset;
@@ -285,7 +285,7 @@ input[type=submit]:hover {
 /* tablet */
 @media (max-width: 768px) {
     html {
-        font-size: 62.5%;
+        font-size: 70%;
     }
 
     .navbar .navbar-extra {
@@ -339,6 +339,10 @@ input[type=submit]:hover {
     
     .navbar .navbar-nav ul li a:hover::after {
         transform: scaleX(0.2);
+    }
+
+    .message .row .result {
+        height: 20rem;
     }
 
 }
@@ -409,5 +413,13 @@ input[type=submit]:hover {
 
     .facilitation {
         padding-top: 10rem;
+    }
+
+    .message .row .table {
+        font-size: 1.2rem;
+    }
+
+    .message .row .result .result-1 p {
+        font-size: 1.2rem;
     }
 }
