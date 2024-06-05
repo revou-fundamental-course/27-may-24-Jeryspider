@@ -1,10 +1,12 @@
+
+// hamburder menu
 const navbarNav = document.querySelector ('.navbar-nav');
 
 document.querySelector('#hamburger-menu').onclick = () => {
     navbarNav.classList.toggle('active');
 };
 
-//klik di luar side bar untuk menghilangkan nav 
+
 const hamburger = document.querySelector('#hamburger-menu');
 
 document.addEventListener('click', function (e) {
@@ -12,6 +14,41 @@ document.addEventListener('click', function (e) {
         navbarNav.classList.remove('active');
     }
 });
+
+
+// slide image
+
+const sliderItems = document.querySelectorAll('.slider-item');
+
+let sliderActive = 1;
+
+if (sliderItems) {
+    sliderItems.forEach((slider, index) => {
+        if (index === 0) {
+            slider.setAttribute("data-show", "show");
+        } else {
+            slider.setAttribute("data-show", "hidden");
+        }
+    })
+
+    setInterval(() => {
+        sliderItems.forEach((slider, index) => {
+            if(sliderActive === index) {
+                slider.setAttribute("data-show", "show");
+            } else {
+                slider.setAttribute("data-show", "hidden");
+            }
+        });
+
+        if(sliderActive === sliderItems.length - 1) {
+            sliderActive = 0;
+        } else {
+            sliderActive++;
+        }
+
+
+    }, 4000)
+}
 
 
 // doom name
@@ -22,6 +59,7 @@ function replaceName() {
 
 replaceName();
 
+// messages
 
 function validateForm() {
     const name = document.forms["message-form"]["full-name"].value;
