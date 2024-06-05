@@ -510,6 +510,10 @@ footer p span {
         padding-top: 10rem;
     }
 
+    .message {
+        padding-top: 10rem;
+    }
+
     .message .row .table {
         font-size: 1.2rem;
     }
