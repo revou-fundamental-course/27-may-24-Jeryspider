@@ -169,8 +169,7 @@ background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.575), transpare
     background-color: #282f3a;
     text-align: center;
     padding: 1.5rem;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin: 1rem;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -181,7 +180,7 @@ background-image: linear-gradient(to top, black, rgba(0, 0, 0, 0.575), transpare
 }
 
 .facilitation .facilitation-container .card img {
-    height: 13rem;
+    height: 12rem;
 }
 
 .facilitation .facilitation-container .card h3 {
